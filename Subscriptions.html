@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/CoffeeShop.css" />
+    <script
+      src="https://kit.fontawesome.com/e903768e8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Subscriptions</title>
+  </head>
+  <body>
+    <header class="Header_navigation">
+      <a class="Header_logo" href="index.html">
+        <i class="fas fa-coffee fa-3x"></i>
+      </a>
+      <nav class="Header_nav">
+        <a href="index.html">Home</a>| <a href="Products.html">Products</a>|
+        <a href="Experiences.html">Experiences</a>|
+        <a href="Subscriptions.html">Subscriptions</a>|
+        <a href="Ubiety.html">Ubiety</a>
+      </nav>
+      <a class="Header_cart" href="#">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+      </a>
+    </header>
+    <main class="Main_content">
+      <div class="form_container">
+        <form action="" method="post" class="coffee_subscription">
+          <fieldset>
+            <legend>Contact:</legend>
+            <div class="form_input">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+            <div class="form_input">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Product:</legend>
+            <div class="form_options">
+              <label for="Sweet & Smooth">Choose a coffee:</label>
+              <select id="Sweet & Smooth" name="Sweet & Smooth">
+                <option value="Paubrasil">Paubrasil</option>
+                <option value="The_Amsterdam">The Amsterdam</option>
+                <option value="Buckle_Down">Buckle Down</option>
+                <option value="CCFP">Colombia Coffee For Peace</option>
+              </select>
+            </div>
+
+            <label for="frequency">Shipment frecuency:</label>
+            <div class="form_options">
+              <input type="radio" id="1x30" name="frecuency" value="1x30" />
+              <label for="male">One per month</label>
+              <input type="radio" id="2x30" name="frecuency" value="2x30" />
+              <label for="female">Two per month</label><br />
+              <input type="radio" id="1x7" name="frecuency" value="1x7" />
+              <label for="other">One per week</label>
+              <input type="radio" id="2x7" name="frecuency" value="2x7" />
+              <label for="other">Two per week</label>
+            </div>
+          </fieldset>
+          <div class="sub_btn_group">
+            <button type="button" class="btn_subscription">Send</button>
+            <button type="button" onclick="reset()" class="btn_subscription">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="Footer_navigation">
+      <div class="footer_links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="Experiences.html">Experiences</a></li>
+        </ul>
+        <ul>
+          <li><a href="Subscriptions.html">Subscriptions</a></li>
+          <li><a href="Ubiety.html">Ubiety</a></li>
+          <li><a href="mailto:fraco.1918@gmail.com">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <span>Subscribe to our newsletter!</span>
+        <div>
+          <input
+            class="data_entry"
+            type="text"
+            name="Subscribe"
+            id="Subscribe"
+            placeholder="e-mail"
+          />
+          <input class="data_send" type="button" value="Subscribe" />
+        </div>
+      </div>
+      <div class="social_media">
+        <span>Social media</span>
+        <div class="social_media_links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

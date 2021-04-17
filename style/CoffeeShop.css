@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+body {
+  font-family: "Balsamiq Sans", cursive;
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+body a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body .data_send {
+  border-bottom-style: none;
+}
+
+body .data_entry {
+  width: 12vw;
+}
+
+body input {
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  border-bottom: white;
+  border-width: 1px;
+  border-bottom-style: solid;
+}
+
+body .Header_navigation {
+  background-color: #593d2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15vh;
+  text-align: center;
+}
+
+body .Header_navigation .Header_logo {
+  width: 10%;
+  margin: auto 10px;
+}
+
+body .Header_navigation .Header_nav {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-weight: bolder;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+body .Header_navigation .Header_nav a {
+  margin: auto 15px;
+  text-decoration: underline;
+}
+
+body .Header_navigation .Header_cart {
+  width: 10%;
+  margin: auto 15px;
+}
+
+body .Header_navigation .Header_cart .fa-shopping-cart {
+  color: white;
+}
+
+body .Main_content {
+  min-height: 54vh;
+}
+
+body .Main_content .intro {
+  position: relative;
+}
+
+body .Main_content .intro img {
+  width: 100%;
+}
+
+body .Main_content .intro article h1 {
+  top: 10%;
+  left: 73%;
+  position: absolute;
+  font-size: 2.5vw;
+}
+
+body .Main_content .intro article p {
+  left: 65%;
+  top: 25%;
+  position: absolute;
+  font-size: 2.5vh;
+  width: 26vw;
+  text-align: justify;
+}
+
+body .Main_content .main_info {
+  margin: 30px 0px;
+}
+
+body .Main_content .main_info h1 {
+  font-size: 4vh;
+}
+
+body .Main_content .main_info p {
+  font-size: 2.7vh;
+}
+
+body .Main_content .main_info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+}
+
+body .Main_content .main_info .container article {
+  text-align: center;
+  margin: auto;
+  margin-top: 16vh;
+  width: 30vw;
+}
+
+body .Main_content .main_info .container img {
+  width: 52vw;
+}
+
+body .Footer_navigation {
+  height: 16vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20px;
+  background-color: #593d2c;
+}
+
+body .Footer_navigation .footer_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+body .Footer_navigation .footer_links ul {
+  margin: auto 10px;
+  margin-top: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+body .Footer_navigation .social_media {
+  text-align: center;
+}
+
+body .Footer_navigation .social_media .social_media_links {
+  font-size: 5vh;
+}
+
+.location_contacts {
+  margin: 10vh auto;
+}
+
+.location_contacts td,
+.location_contacts th {
+  border: 1px solid #593d2c;
+  text-align: left;
+  padding: 8px;
+}
+
+.location_contacts tr:nth-child(even) {
+  background-color: #593d2c;
+}
+
+.experiences_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.experiences_group img {
+  height: 60vh;
+}
+
+.incentive {
+  text-align: center;
+}
+
+.form_container {
+  background-image: url("../images/subscription worked.jpg");
+  min-height: 54vh;
+  padding-top: 12vh;
+}
+
+.coffee_subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25vw;
+  margin: 0px auto;
+}
+
+.coffee_subscription .form_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px auto;
+}
+
+.coffee_subscription .form_input input {
+  width: 12vw;
+}
+
+.coffee_subscription .form_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px auto;
+}
+
+.coffee_subscription .sub_btn_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.coffee_subscription .sub_btn_group .btn_subscription {
+  font-family: inherit;
+  text-align: center;
+  width: 6vw;
+  margin: 10px auto;
+  color: white;
+  background-color: transparent;
+  border-style: none;
+  font-size: 31px;
+  text-decoration: underline;
+}
+
+.products_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.products_container .products img {
+  width: 50vh;
+}
+
+a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=CoffeeShop.css.map */

@@ -1,0 +1,215 @@
+//INDEX
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+  font-family: "Balsamiq Sans", cursive;
+  background-color: black;
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  .data_send {
+    border-bottom-style: none;
+  }
+  .data_entry {
+    width: 12vw;
+  }
+  input {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    border: none;
+    border-bottom: white;
+    border-width: 1px;
+    border-bottom-style: solid;
+  }
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  //HEADER
+  .Header_navigation {
+    background-color: #593d2c;
+    display: flex;
+    height: 15vh;
+    text-align: center;
+    .Header_logo {
+      width: 10%;
+      margin: auto 10px;
+    }
+    .Header_nav {
+      margin: auto;
+      display: flex;
+      align-content: center;
+      font-weight: bolder;
+      font-size: 1.3vw;
+      text-align: center;
+      a {
+        margin: auto 15px;
+        text-decoration: underline;
+      }
+    }
+    .Header_cart {
+      width: 10%;
+      margin: auto 15px;
+      .fa-shopping-cart {
+        color: white;
+      }
+    }
+  }
+  //MAIN
+  .Main_content {
+    min-height: 54vh;
+    .intro {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      article {
+        h1 {
+          top: 10%;
+          left: 73%;
+          position: absolute;
+          font-size: 2.5vw;
+        }
+        p {
+          left: 65%;
+          top: 25%;
+          position: absolute;
+          font-size: 2.5vh;
+          width: 26vw;
+          text-align: justify;
+        }
+      }
+    }
+    .main_info {
+      margin: 30px 0px;
+      h1 {
+        font-size: 4vh;
+      }
+      p {
+        font-size: 2.7vh;
+      }
+      .container {
+        display: flex;
+        height: 70vh;
+        article {
+          text-align: center;
+          margin: auto;
+          margin-top: 16vh;
+          width: 30vw;
+        }
+        img {
+          width: 52vw;
+        }
+      }
+    }
+  }
+  //FOOTER
+  .Footer_navigation {
+    height: 16vh;
+    display: flex;
+    font-size: 3vh;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    background-color: #593d2c;
+    .footer_links {
+      display: flex;
+      align-content: flex-start;
+      ul {
+        margin: auto 10px;
+        margin-top: 0px;
+        list-style-type: none;
+        padding: 0px;
+      }
+    }
+    .social_media {
+      text-align: center;
+      .social_media_links {
+        font-size: 5vh;
+      }
+    }
+  }
+}
+//UBIETY
+.location_contacts {
+  margin: 10vh auto;
+  td,
+  th {
+    border: 1px solid #593d2c;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #593d2c;
+  }
+}
+//EXPERIENCES
+.experiences_group {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  img {
+    height: 60vh;
+  }
+}
+.incentive {
+  text-align: center;
+}
+//SUBSCRIPTIONS
+.form_container {
+  background-image: url("../images/subscription worked.jpg");
+  min-height: 54vh;
+  padding-top: 12vh;
+}
+.coffee_subscription {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  margin: 0px auto;
+  .form_input {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    input {
+      width: 12vw;
+    }
+  }
+  .form_options {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+  }
+  .sub_btn_group {
+    display: flex;
+    justify-content: center;
+
+    .btn_subscription {
+      font-family: inherit;
+      text-align: center;
+      width: 6vw;
+      margin: 10px auto;
+      color: white;
+      background-color: transparent;
+      border-style: none;
+      font-size: 31px;
+      text-decoration: underline;
+    }
+  }
+}
+//PRODUCTS
+.products_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  font-size: 3vh;
+  .products {
+    img {
+      width: 50vh;
+    }
+  }
+}
+
+//MENU ANIMATION
+a:hover {
+  transform: scale(1.2);
+}
