@@ -1,8 +1,15 @@
+/* Variables */
+/* SCSS */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 body {
-  font-family: "Balsamiq Sans", cursive;
-  background-color: black;
-  color: white;
+  font-family: "Balsamiq Sans", cursive !important;
+  background-color: black !important;
+  color: white !important;
   margin: 0px;
   padding: 0px;
 }
@@ -36,6 +43,7 @@ body .Header_navigation {
   display: -ms-flexbox;
   display: flex;
   height: 15vh;
+  color: white;
   text-align: center;
 }
 
@@ -61,6 +69,10 @@ body .Header_navigation .Header_nav a {
   text-decoration: underline;
 }
 
+body .Header_navigation .Header_nav .Header_nav_mobile {
+  visibility: hidden;
+}
+
 body .Header_navigation .Header_cart {
   width: 10%;
   margin: auto 15px;
@@ -76,10 +88,6 @@ body .Main_content {
 
 body .Main_content .intro {
   position: relative;
-}
-
-body .Main_content .intro img {
-  width: 100%;
 }
 
 body .Main_content .intro article h1 {
@@ -114,18 +122,21 @@ body .Main_content .main_info .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
+}
+
+body .Main_content .main_info .container img:first-child :last-child {
+  float: left;
 }
 
 body .Main_content .main_info .container article {
   text-align: center;
   margin: auto;
   margin-top: 16vh;
-  width: 30vw;
+  width: 50vw;
 }
 
 body .Main_content .main_info .container img {
-  width: 52vw;
+  width: 100%;
 }
 
 body .Footer_navigation {
@@ -222,11 +233,11 @@ body .Footer_navigation .social_media .social_media_links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 15px auto;
+  margin: 30px/2px auto;
 }
 
 .coffee_subscription .form_input input {
-  width: 12vw;
+  width: 6cw/2vw;
 }
 
 .coffee_subscription .form_options {
@@ -276,5 +287,105 @@ body .Footer_navigation .social_media .social_media_links {
 a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  color: inherit !important;
+}
+
+@media only screen and (max-width: 768px) {
+  body .Header_navigation {
+    height: 10vh;
+  }
+  body .Header_navigation .Header_logo {
+    display: none;
+  }
+  body .Header_navigation .Header_nav {
+    font-size: 3.5vw;
+  }
+  body .Header_navigation .Header_nav a {
+    margin: auto 5px;
+  }
+  body .Header_navigation .Header_cart {
+    display: none;
+  }
+  body .Main_content .intro article h1 {
+    top: unset;
+    left: unset;
+    position: unset;
+    text-align: center;
+    font-size: 6.5vw;
+  }
+  body .Main_content .intro article p {
+    top: unset;
+    left: unset;
+    position: unset;
+    width: unset;
+    text-align: center;
+  }
+  body .Main_content .main_info .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .Main_content .main_info .container .shop_info {
+    text-align: center;
+    margin: auto;
+    margin-top: unset;
+    width: unset;
+  }
+  body .Main_content .main_info .container article {
+    margin: auto;
+    margin-top: unset;
+    width: unset;
+  }
+  body .Main_content .main_info .container:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .Main_content .products_container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body .Main_content .experiences_group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .Main_content .form_container {
+    background-position: center center;
+    background-size: 200vh;
+    padding-top: 5vh;
+  }
+  body .Main_content .form_container .coffee_subscription {
+    width: unset;
+    margin: unset;
+  }
+  body .Main_content .form_container .coffee_subscription .sub_btn_group button {
+    width: unset;
+  }
+  body .Footer_navigation {
+    height: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  body .Footer_navigation .social_media .social_media_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .Footer_navigation .newsletter input {
+    width: 50%;
+  }
+  body .Footer_navigation .footer_links {
+    margin: 5vh auto;
+  }
 }
 /*# sourceMappingURL=CoffeeShop.css.map */

@@ -1,8 +1,18 @@
+/* Variables */
+$Coffee: #593d2c;
+$Default: unset;
+$FooterFont: 3vh;
+
+/* SCSS */
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+//Desktop view
 //INDEX
 body {
   @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
-  font-family: "Balsamiq Sans", cursive;
-  background-color: black;
+  font-family: "Balsamiq Sans", cursive !important;
+  background-color: black !important;
   a {
     color: inherit;
     text-decoration: inherit;
@@ -22,14 +32,15 @@ body {
     border-width: 1px;
     border-bottom-style: solid;
   }
-  color: white;
+  color: white !important;
   margin: 0px;
   padding: 0px;
   //HEADER
   .Header_navigation {
-    background-color: #593d2c;
+    background-color: $Coffee;
     display: flex;
     height: 15vh;
+    color: white;
     text-align: center;
     .Header_logo {
       width: 10%;
@@ -46,6 +57,9 @@ body {
         margin: auto 15px;
         text-decoration: underline;
       }
+      .Header_nav_mobile {
+        visibility: hidden;
+      }
     }
     .Header_cart {
       width: 10%;
@@ -60,9 +74,6 @@ body {
     min-height: 54vh;
     .intro {
       position: relative;
-      img {
-        width: 100%;
-      }
       article {
         h1 {
           top: 10%;
@@ -90,15 +101,17 @@ body {
       }
       .container {
         display: flex;
-        height: 70vh;
+        img:first-child :last-child {
+          float: left;
+        }
         article {
           text-align: center;
           margin: auto;
           margin-top: 16vh;
-          width: 30vw;
+          width: 50vw;
         }
         img {
-          width: 52vw;
+          width: 100%;
         }
       }
     }
@@ -107,10 +120,10 @@ body {
   .Footer_navigation {
     height: 16vh;
     display: flex;
-    font-size: 3vh;
+    font-size: $FooterFont;
     justify-content: space-evenly;
     padding-top: 20px;
-    background-color: #593d2c;
+    background-color: $Coffee;
     .footer_links {
       display: flex;
       align-content: flex-start;
@@ -134,13 +147,13 @@ body {
   margin: 10vh auto;
   td,
   th {
-    border: 1px solid #593d2c;
+    border: 1px solid $Coffee;
     text-align: left;
     padding: 8px;
   }
 
   tr:nth-child(even) {
-    background-color: #593d2c;
+    background-color: $Coffee;
   }
 }
 //EXPERIENCES
@@ -169,9 +182,11 @@ body {
   .form_input {
     display: flex;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 30px/2px auto;
+    //OPERADOR EN SCSS
     input {
-      width: 12vw;
+      width: 6cw/2vw;
+      //OPERADOR EN SCSS
     }
   }
   .form_options {
@@ -192,6 +207,7 @@ body {
       background-color: transparent;
       border-style: none;
       font-size: 31px;
+
       text-decoration: underline;
     }
   }
@@ -212,4 +228,125 @@ body {
 //MENU ANIMATION
 a:hover {
   transform: scale(1.2);
+  color: inherit !important;
+}
+//Mobile view
+@media only screen and (max-width: 768px) {
+  body {
+    .Header_navigation {
+      height: 10vh;
+      .Header_logo {
+        display: none;
+      }
+      .Header_nav {
+        font-size: 3.5vw;
+        a {
+          margin: auto 5px;
+        }
+      }
+      .Header_cart {
+        display: none;
+      }
+    }
+    .Main_content {
+      .intro {
+        article {
+          h1 {
+            top: $Default;
+            left: $Default;
+            position: $Default;
+            text-align: center;
+            font-size: 6.5vw;
+          }
+          p {
+            top: $Default;
+            left: $Default;
+            position: $Default;
+            width: $Default;
+            text-align: center;
+          }
+        }
+      }
+      .main_info {
+        .container {
+          flex-direction: column-reverse;
+          .shop_info {
+            text-align: center;
+            margin: auto;
+            margin-top: $Default;
+            width: $Default;
+          }
+          article {
+            margin: auto;
+            margin-top: $Default;
+            width: $Default;
+          }
+        }
+        .container:nth-child(2) {
+          flex-direction: column;
+        }
+      }
+      .products_container {
+        grid-template-columns: auto;
+      }
+      .experiences_group {
+        flex-direction: column;
+      }
+      .form_container {
+        background-position: center center;
+        background-size: 200vh;
+        padding-top: 5vh;
+        .coffee_subscription {
+          width: $Default;
+          margin: $Default;
+          .sub_btn_group {
+            button {
+              width: $Default;
+            }
+          }
+        }
+      }
+    }
+    .Footer_navigation {
+      height: $Default;
+      flex-direction: column-reverse;
+      text-align: center;
+      .social_media {
+        .social_media_links {
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+      .newsletter {
+        input {
+          width: 50%;
+        }
+      }
+      .footer_links {
+        margin: 5vh auto;
+        //
+        // ul {
+        //   font-size: $FooterFont;
+        //   :first-child {
+        //     font-size: $FooterFont * 1.5;
+        //     a {
+        //       font-size: inherit;
+        //     }
+        //   }
+        //   :nth-child(2) {
+        //     font-size: $FooterFont;
+        //     a {
+        //       font-size: inherit;
+        //     }
+        //   }
+        //   :last-child {
+        //     font-size: $FooterFont * 0.5;
+        //     a {
+        //       font-size: inherit;
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
 }
